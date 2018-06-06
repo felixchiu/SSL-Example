@@ -1,3 +1,10 @@
-## SSL Example
+# SSL Example
 
 Provide an SSL Server and Client with Spring boot. 
+
+## Keytool
+```bash
+keytool -genkey -alias selfsigned_localhost_sslserver -keyalg RSA -keysize 2048 -validity 700 -keypass changeit -storepass changeit -keystore ssl-server.jks
+keytool -list -keystore ssl-server.jks
+keytool -list -rfc -keystore ssl-server.jks
+```
